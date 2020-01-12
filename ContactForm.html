@@ -1,0 +1,64 @@
+<!--
+
+This sample contct form has been provided by AccuFind Internet Services.
+
+In an effort to make your migration to our company as easy as possible, we have provided a 
+simple contact form that utilizes the script provided in your cgi-bin folder.
+
+INSTRUCTIONS
+There are three fields required for the sitemail.pl script to operate properly:
+
+<input type="hidden" name="recipient" value="your@emailaddress.com">
+<input type="hidden" name="subject="value="Web Form Subject">
+<input type="hidden" name="redirect" value="/index.html">
+
+The fields above are examples of the hidden fields. You will need to change the values of the 
+fields to your criteria.
+
+Please replace the sample email address within the form with your own email address.
+The email address must be valid for the script to work properly.
+
+Once this is complete, and you have made the necessary changes to the sitemail.pl script itself, 
+you can open the form in a browser and enter your an email address in the text field and submit the form. 
+
+Once the form has been tested properly and you are satisfied that it is working, you can begin to add additional
+fields as needed and build your webpage around the form.
+
+The form used is a copy of Matt's Form Mail script. However other versions of this script have proven 
+to be insecure and are not recommended. In addition, we have renamed the form to avoid internet scanners 
+which are used by unauthorized users, in an attempt to exploit the older versions of the script.
+
+-->
+<html>
+<head>
+<title>Web form</title>
+</head>
+<body bgcolor="#ffffff" text="#333333">
+
+<form action="/cgi-bin/sitemail.pl" method="post">
+	<input type="hidden" name="recipient" value="your@emailaddress.com">
+	<input type="hidden" name="subject="value="Web Form Subject">
+	<input type="hidden" name="redirect" value="/index.html">
+<table width="400">
+	<tr<td colspan="2">
+		<font face="verdana" size="3">Welcome to AccuFind Internet Services</font><br>
+		<font face="verdana" size="2">Sample form to send Mail from your website.<br>
+	</td><tr>
+	<tr><td><font face="verdana" size="2">Name:</font></td>
+		<td><input type="text" name="name" size="20" maxlength="100"></td></tr>
+	<tr><td><font face="verdana" size="2">Address:</font></td>
+		<td><input type="text" name="address" size="20" maxlength="100"></td></tr>
+	<tr><td><font face="verdana" size="2">City:</font></td>
+		<td><input type="text" name="city" size="20" maxlength="100"></td></tr>
+	<tr><td><font face="verdana" size="2">State:</font></td>
+		<td><input type="text" name="state" size="20" maxlength="100"></td></tr>
+	<tr><td><font face="verdana" size="2">Zip Code:</font></td>
+		<td><input type="text" name="zipcode" size="20" maxlength="100"></td></tr>
+	<tr><td><font face="verdana" size="2">Email Address:</font></td>
+		<td><input type="text" name="email" size="20" maxlength="100"></td></tr>
+	<tr><td colspan="2"><input type="submit"></td></tr>
+</form>
+</font>
+
+</body>
+</html>
